@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>webBackend2</title>
+</head>
+<body>
+<div>
+    <h1>1.Метод GET в протоколе HTTP 1.0</h1>
+
+    <h2>GET /lab2/index.php HTTP/1.0</h2>
+    <li><img id="1" src="HTTP_1.0.png" alt="http_1.0"></li>
+    <h1 >2.Метод GET в протоколе HTTP 1.1</h1>
+
+    <h2>GET /lab2/index.php HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <li><img id="2" src="HTTP_1.1.png" alt="HTTP_1.1"></li>
+    <h1 >3.Размер файла file.tar.gz</h1>
+
+    <h2>HEAD /lab2/file.tar.gz HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <li><img id="3" src="tar_size.png" alt="tar_size"></li>
+    <h1 >4.Медиатип ресурса /image.png</h1>
+
+    <h2>HEAD /lab2/image.png HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <li><img id="4" src="mediatype.png" alt="mediatype"></li>
+    <h1 >5.Комментарий на сервер по адресу /index.php</h1>
+
+    <h2>POST /lab2/index.php HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <h2>Content-Type: application/x-www-form-urlencoded</h2>
+    <h2>Content-Length: 17</h2>
+    <h2>comment=test_lab</h2>
+    <li><img id="5" src="comment.png" alt="comment"></li>
+    <h1 >6.Первые 100 байт файла /file.tar.gz</h1>
+
+    <h2>GET /lab2/file.tar.gz HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <h2>Range: bytes=0-99</h2>
+    <li><img id="6" src="hundred_bytes.png" alt="hundred_bytes"></li>
+    <h1 >7.Кодировка ресурса /index.php</h1>
+
+    <h2>HEAD /lab2/index.php HTTP/1.1</h2>
+    <h2>Host: u82272.kubsu-dev.ru</h2>
+    <li><img id="7" src="charset.png" alt="charset"></li>
+</div>
+</body>
+</html>
